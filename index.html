@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solution to the Frontend Mentor challenge : Social links profile">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Social links profile</title>
+
+  <style>
+    @font-face {
+      font-family: Inter;
+      src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+      font-display: swap;
+    }
+
+    :root {
+      --green: hsl(75, 94%, 57%);
+      --grey: hsl(0, 0%, 20%);
+      --darkgrey: hsl(0, 0%, 12%);
+      --black: hsl(0, 0%, 8%);
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      padding: 1rem;
+      color: hsl(0, 0%, 60%);
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 64%);
+    }
+    .bg {
+      font-family: Inter;
+      background: var(--black);
+      padding: 0;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      font-size: 16px;
+    }
+
+    .container {
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .card {
+      background: var(--darkgrey);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      border-radius: .6rem;
+      width: 300px;
+      transition: all .2s ease-in-out;
+      text-align: center;
+    }
+
+
+    .card button {
+      background: var(--grey);
+      border: none;
+      font-weight: 800;
+      padding: .7rem .65rem;
+      border-radius: .4rem;
+      color: white;
+      font-size: 14px;
+      transition: all .2s ease-in-out;
+    }
+
+    .card button:hover {
+      background: var(--green);
+      color: black
+    }
+
+    .label {
+      font-size: 14px;
+      font-weight: 700;
+      margin: 0;
+      color: var(--green)
+    }
+
+    .heading {
+      margin: 0;
+      color: white;
+      transition: all .2s ease-in-out;
+      font-weight: 600;
+    }
+
+    .body {
+      font-size: 14px;
+      color: white;
+      font-weight: 400;
+    }
+
+
+    .avatar {
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+
+    @media screen and (max-width: 480px) and (min-width:371px) {
+      .card {
+        width: 280px;
+      }
+
+    }
+
+    @media screen and (max-width: 370px) {
+      .card {
+        width: 220px;
+      }
+
+    }
+  </style>
+</head>
+
+<body class="bg">
+  <div class="container">
+    <div class="card">
+
+      <img class="avatar" src="./assets/images/avatar-jessica.jpeg" alt="avatar" width="85" height="85" />
+      <h2 class="heading">Jessica Randall </h2>
+      <p class="label">London, United Kingdom </p>
+      <p class="body">"Front-end developer and avid reader."</p>
+
+      <div style="display: flex;flex-direction: column;gap:16px;width: 100%;">
+        <button>GitHub</button>
+        <button>Frontend Mentor</button>
+        <button>LinkedIn</button>
+        <button>Twitter</button>
+        <button>Instagram</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/aryakrishnaksh2021">Aryakrishna VR</a>.
+  </div>
+
+</body>
+
+</html>
